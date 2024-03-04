@@ -15,6 +15,7 @@ class findMajor{
         int right = findMajority(A, mid+1,h);
         if(isMajority(A,left)){ return left; }
         if(isMajority(A, right)){ return right; }
+        
         return -1;
     }
 }
