@@ -4,6 +4,7 @@
         int [] arr = {1,2,3,5,7,8,10};
         System.out.println(findMissingPatient(arr));
     }
+    
     public static int findMissingPatient(int[] A) {
         int low = 0;
         int high = A.length - 1;
@@ -21,7 +22,7 @@
                 high = mid - 1;
             }
         }
-
+    
         // The first patient that did not come to their appointment is at index low + 1
         return low + 1;
     }
